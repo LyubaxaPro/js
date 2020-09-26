@@ -1,0 +1,16 @@
+{
+  "name": "task3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "2.js",
+  "scripts": {
+    "start": "node 2.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "readline-sync": "^1.4.10"
+  }
+}
