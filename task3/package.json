@@ -2,9 +2,15 @@
   "name": "task3",
   "version": "1.0.0",
   "description": "",
-  "main": "2.js",
+  "main": "1.js",
   "scripts": {
-    "start": "node 2.js"
+    "start1": "node 1.js",
+    "start2": "node 2.js",
+    "start3": "node 3.js",
+    "start4": "node 4.js",
+    "start5": "node 5.js",
+    "start6": "node 6.js",
+    "start7": "node 7.js"
   },
   "keywords": [],
   "author": "",

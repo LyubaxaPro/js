@@ -7,11 +7,11 @@ const readlineSync = require('readline-sync');
 
 function write_to_file(filename){
 
-    const N = readlineSync.questionInt("Input number of lines: ");
+    const N = readlineSync.questionInt("Введите количество строк: ");
     let arr = [];
     
     for (let i = 0; i < N; i++){
-        let str = readlineSync.question("Input string: ");
+        let str = readlineSync.question("Введите строку: ");
         arr.push(str);
     }
     
@@ -19,7 +19,7 @@ function write_to_file(filename){
     const fs = require("fs");
     fs.writeFileSync(filename, json_str);
     
-    console.log("Create File OK");
+    console.log("Файл создан и заполнен");
 }
 
 function read_file(filename){
@@ -27,7 +27,7 @@ function read_file(filename){
     if (fs.existsSync(filename)) {
         return  fs.readFileSync(filename, "utf8");;
     } else {
-        console.log("File was not found");
+        console.log("Файл не найден");
         return false;
     }
 }
@@ -47,25 +47,28 @@ function get_lines(json_str){
     let letter_is_vowel = true;
     let vowel_arr =[ ];
 
-    for (let i = 0; i < arr.lenght; i++){
-        for (let j = 0; j < arr[i].lenght && letter_is_vowel; j++){
+    for (let i = 0; i < arr.length; i++){
+        for (let j = 0; j < arr[i].length; j++){
             letter_is_vowel = is_vowel(arr[i][j]);
+            if (!letter_is_vowel)
+                break;
         }
         if (letter_is_vowel) {
             vowel_arr.push(arr[i]);
         }
     }
-    console.log(vowel_arr);
+    console.log(vowel_arr)
     return vowel_arr;
 }
 
 write_to_file("2.txt");
 let jstr = read_file("2.txt");
-console.log(jstr);
-if (jstr){
-    let arr = get_lines(jstr);
+let arr = get_lines(jstr);
+
+if (arr.length == 0){
+    console.log("Нет слов, состоящих из гласных.")
+} else {
     console.log("Слова состоящие из гласных букв: ");
-    console.log(arr.lenght);
-    for (let i = 0; i < arr.lenght; i++) 
+    for (let i = 0; i < arr.length; i++) 
         console.log(arr[i]);
 }

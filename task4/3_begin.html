@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Задание 3</title>
+</head>
+<body>  
+    <h1>Задание 3</h1>
