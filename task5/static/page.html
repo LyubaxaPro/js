@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Задание 1</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Задание 1</h1>
+
+    <p>Фамилия</p>
+    <input id="field-surname" type="text" spellcheck="false" autocomplete="off">
+
+    <p>Телефон в формате +7xxx-xxx-xx-xx</p>
+    <input id="field-tel" type="tel" pattern="+7[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" spellcheck="false" autocomplete="off"></p>
+
+    <p>Электронная почта</p>
+    <input id="field-email" type="email" spellcheck="false" autocomplete="off">
+
+    <br>
+    <br>
+
+    <div id="send-btn" class="btn-class">Отправить</div>
+
+    <br>
+    <br>
+
+    <h1 id="result-label"></h1>
+
+    <script src="/code.js"></script>
+    <script src="bootstrap-formhelpers-phone.js"></script>
+</body>
+</html>

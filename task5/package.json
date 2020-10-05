@@ -1,0 +1,16 @@
+{
+  "name": "task5_new",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+      "start_pos": "node index_pos.js",
+      "start_get": "node index_get.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
