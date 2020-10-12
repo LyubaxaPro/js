@@ -1,0 +1,1 @@
+[{"warehouse":"WA","cars_arr":["eee","ertqw"]},{"warehouse":"WB","cars_arr":["eee","ertqw","nmk"]},{"warehouse":"WC","cars_arr":["asc","dfg","aaaaa","nmk"]},{"warehouse":"WD","cars_arr":["eee"]},{"warehouse":"WE","cars_arr":["ertqw","aaaaa","asc"]},{"warehouse":"WN","cars_arr":"car,car0"}]

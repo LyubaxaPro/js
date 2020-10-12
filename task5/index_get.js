@@ -7,7 +7,7 @@ const fs = require("fs");
 
 // запускаем сервер
 const app = express();
-const port = 5000;
+const port = 4000;
 app.listen(port);
 console.log(`Server on port ${port}`);
 
