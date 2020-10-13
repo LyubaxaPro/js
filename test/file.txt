@@ -1,0 +1,1 @@
+A: [object Object] B: [object Object] C: [object Object]

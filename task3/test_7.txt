@@ -1,0 +1,51 @@
+{
+	"field": "a",
+	"left": {
+		"field": "b",
+		"left": {
+			"field": "d"
+		},
+		"right": {
+			"field": "e"
+		}
+	},
+	"right": {
+		"field": "c",
+		"right": {
+			"field": "k",
+			"right": {
+				"field": "m",
+				"left": {
+					"field": "t",
+					"right": {
+						"field": "o",
+						"right": {
+							"field": "z"
+						}
+					},
+					"middle": {
+						"field": "r"
+					},
+					"left": {
+						"field": "n"
+					},
+					"r_right": {
+						"field": "y"
+					}
+				}
+			}
+		},
+		"left": {
+			"field": "q"
+		},
+		"middle": {
+			"field": "x"
+		},
+		"r_right": {
+			"field": "p"
+		}
+	},
+	"middle": {
+		"field": "w"
+	}
+}

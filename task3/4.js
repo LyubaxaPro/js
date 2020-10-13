@@ -15,29 +15,6 @@ function read_file(filename){
     }
 }
 
-// function find_in_folder(folder_name){
-//     const fs = require("fs");
-//     const arr = fs.readdirSync(folder_name);
-
-//     for(let i = 0; i < arr.length; i++) {
-//         const fileName = arr[i];
-//         if (fileName.indexOf('.') == -1){
-//             console.log(arr[i] + " - папка");
-//            // find_in_folder((folder_name + "/" + arr[i]));
-//         }
-//         else {
-//             let fileString = read_file(fileName);
-//             if (fileString.length <= 10){
-//                 console.log(arr[i]);
-//             }
-//         }
-        
-//     }
-// }
-
-// let folder_name = "./4_folder/b";
-// find_in_folder(folder_name); 
-"use strict";
 
 function find_in_folder(folder_name){
     const fs = require("fs");

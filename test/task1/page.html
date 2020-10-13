@@ -1,0 +1,43 @@
+<!-- spellcheck - проверка грамматики
+    autocomplete Этот атрибут указывает, разрешено ли автоматическое заполнение поля браузером. 
+    Разрешено по умолчанию, даже если не указано. 
+    off: Пользователь должен каждый раз полностью вводить значение в поле или документ предусматривает свой собственный метод автозаполнения;
+      браузер не делает автоматического заполнения записи.
+
+      tel - Элемент управления для ввода номера телефона; разрывы строк автоматически 
+     входного значения, но никакой другой синтаксис не применяется.
+
+        type email Поле для редактирования адреса электронной почты. Перед отправкой проверяется, что входное значение содержит либо пустую строку,
+      либо один действительный адрес электронной почты.  -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Задание 1</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Задание 1</h1>
+
+    <p>Фамилия</p>
+    <input id="field-surname" type="text" spellcheck="false" autocomplete="off">
+
+    <p>Номер телефона</p>
+    <input id="field-tel" type="tel" spellcheck="false" autocomplete="off">
+
+    <p>Электронная почта</p>
+    <input id="field-email" type="email" spellcheck="false" autocomplete="off">
+
+    <br>
+    <br>
+
+    <div id="send-btn" class="btn-class">Отправить</div>
+
+    <br>
+    <br>
+
+    <h1 id="result-label"></h1>
+
+    <script src="/code.js"></script>
+</body>
+</html>

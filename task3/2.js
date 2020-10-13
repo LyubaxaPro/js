@@ -2,6 +2,7 @@
 //  Нужно вывести только те строки на экран, в которых содержатся только гласные буквы.
 
 "use strict";
+const fs = require("fs");
 
 const readlineSync = require('readline-sync');
 
@@ -16,14 +17,12 @@ function write_to_file(filename){
     }
     
     let json_str = JSON.stringify(arr);
-    const fs = require("fs");
     fs.writeFileSync(filename, json_str);
     
     console.log("Файл создан и заполнен");
 }
 
 function read_file(filename){
-    const fs = require("fs");
     if (fs.existsSync(filename)) {
         return  fs.readFileSync(filename, "utf8");;
     } else {
@@ -49,7 +48,7 @@ function get_lines(json_str){
 
     for (let i = 0; i < arr.length; i++){
         for (let j = 0; j < arr[i].length; j++){
-            letter_is_vowel = is_vowel(arr[i][j]);
+            letter_is_vowel = is_vowel(arr[i][j].toLowerCase());
             if (!letter_is_vowel)
                 break;
         }

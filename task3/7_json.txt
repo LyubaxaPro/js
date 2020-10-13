@@ -1,1 +1,33 @@
-{"name":"a","left":{"name":"b","left":{"name":"d","left":{"name":"e"}}},"right":{"name":"c","right":{"name":"n1","right":{"name":"n2","left":{"name":"n3","right":{"name":"n4","right":{"name":"n5"}}}}},"left":{"name":"n6"}}}
+{
+    "name": "a",
+    "left": {
+        "name": "b",
+        "left": {
+            "name": "d",
+            "left": {
+                "name": "e"
+            }
+        }
+    },
+    "right": {
+        "name": "c",
+        "right": {
+            "name": "n1",
+            "right": {
+                "name": "n2",
+                "left": {
+                    "name": "n3",
+                    "right": {
+                        "name": "n4",
+                        "right": {
+                            "name": "n5"
+                        }
+                    }
+                }
+            }
+        },
+        "left": {
+            "name": "n6"
+        }
+    }
+}

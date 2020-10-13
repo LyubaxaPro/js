@@ -14,7 +14,7 @@ function find_files(extension, address){
 
     for(let i = 0; i < arr.length; i++) {
         let pos = arr[i].search(extension);
-        if (arr[i].length - pos == extension.length)
+        if (arr[i].length - pos === extension.length)
             files.push(arr[i]);
     }
     return files;
@@ -29,7 +29,7 @@ function print_file(filename){
         console.log(contentString);
     } else {
         console.log("Файл " + filename + "не найден.");
-        return FILE_ERROR;
+        return -1;
     }
 }
 

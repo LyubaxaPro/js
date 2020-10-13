@@ -24,7 +24,7 @@ n4.right = n5;
 
 c.left = n6;
 
-const jsonString = JSON.stringify(a);
+const jsonString = JSON.stringify(a, null, 4);
 
 const fs = require("fs");
 

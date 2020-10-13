@@ -5,32 +5,39 @@
 
 "use strict";
 
+
 const fs = require("fs");
 
-function find_max_way(obj, h, way){
-    if (typeof obj != 'object')
-        return {"h" : h, "way" : way};
-
-    way.push(obj.name);
-
-    let way_left = way.slice(0);
-    let way_right = way.slice(0);
-
-    let left_obj = find_max_way(obj.left, h + 1, way_left);
-
-    let right_obj = find_max_way(obj.right, h + 1, way_right);
-
-    if (left_obj.h >= right_obj.h){
-        return left_obj;
-    } else {
-        return right_obj;
+function find_max_d(obj){
+    let h = 0;
+    for (let key in obj){
+       // console.log(key);
+        if (typeof obj[key] === 'object'){
+            h = find_max_d(obj[key]) + 1;
+        } 
     }
+    return h;
+}
+
+function find_key(obj){
+    let max_h = 0;
+    let max_key = 0;
+    for (let key in obj){
+        let h = find_max_d(obj[key]);
+        console.log(key);
+        console.log(h);
+        if (h > max_h){
+            max_key = key;
+            max_h = h;
+        }
+    }
+    return {"h" : max_h, "max_key" : max_key};
 }
 
 let stringJSON = fs.readFileSync("7_json.txt", "utf8");
 let global = JSON.parse(stringJSON);
 
-let obj = find_max_way(global, 0, []);
-console.log(obj);
-
+let obj = find_key(global);
+console.log("Глубина: " + obj.h);
+console.log(obj.max_key);
 

@@ -10,7 +10,7 @@
     "start4": "node 4.js",
     "start5": "node 5.js",
     "start6": "node 6.js",
-    "start7": "node 7.js"
+    "start7": "node 7_new.js"
   },
   "keywords": [],
   "author": "",

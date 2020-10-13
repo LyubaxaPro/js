@@ -2,7 +2,6 @@
 // В Node js дочерние процессы создаются для выполнения ресурсоемких операций, которые во время выполнения 
 // блокируют цикл событий основного процесса.
 // получаем параметры скрипта
-const valueA = "" + process.argv[2];
 // const valueB = "" + process.argv[3];
 
 // импортируем библиотеку
@@ -18,16 +17,11 @@ function useCmd(s) {
 }
 
 // получаем факториал
-const factorialCommand = `node factorial.js ${valueA}`;
-console.log(factorialCommand);
-let factorial = useCmd(factorialCommand);
-factorial = parseInt(factorial);
-console.log(factorial);
+let arr = process.argv.slice(2);
 
-// получаем массив факториалов
-//${valueA}
-//const factorial_arrCommand = `node factorial_arr.js`;
-// console.log(factorial_arrCommand);
-// let factorial_arr = useCmd(factorial_arrCommand);
-// //factorial_arr = parseInt(factorial);
-// console.log(factorial_arr);
+	for (let i = 0; i < arr.length; i++){
+		let factorialCommand = `node factorial.js ${arr[i]}`;
+		console.log(factorialCommand);
+		let factorial = useCmd(factorialCommand);
+		console.log(factorial);
+}

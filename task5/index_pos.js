@@ -1,7 +1,7 @@
 "use strict";
 const filename = 'file.txt';
-const fs = require("fs");
-fs.writeFileSync(filename, '');
+// const fs = require("fs");
+// fs.writeFileSync(filename, '');
 
 //Для того чтобы Node.js сервер мог передавать по запросу находящиеся у него статические файлы
 // (изображения, аудио, HTML, CSS, JS), используется функция фреймворка Express static().
